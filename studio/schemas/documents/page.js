@@ -1,4 +1,10 @@
 import { MasterDetailIcon } from '@sanity/icons'
+const contentTypes = [
+  { type: 'hero' },
+  { type: 'imageSection' },
+  { type: 'mailchimp' },
+  { type: 'textSection' },
+]
 
 export default {
   name: 'page',
@@ -18,15 +24,18 @@ export default {
       title: 'Title',
     },
     {
+      name: 'link',
+      type: 'internalLink'
+    },
+    {
+      name: 'cta',
+      type: 'cta',
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Page sections',
-      of: [
-        { type: 'hero' },
-        { type: 'imageSection' },
-        { type: 'mailchimp' },
-        { type: 'textSection' },
-      ],
+      of: contentTypes,
     },
     {
       name: 'description',
@@ -51,3 +60,5 @@ export default {
     },
   },
 }
+
+export {contentTypes}

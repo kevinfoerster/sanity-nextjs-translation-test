@@ -50,7 +50,6 @@ const schema = {
 }
 
 
-const parsedSchema = new Schema(schema);
-console.log(parsedSchema.get('hero'));
 export default createSchema(schema);
+export {schema}
 
