@@ -18,6 +18,7 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
+      translatable: true
     },
     {
       title: 'Internal link',

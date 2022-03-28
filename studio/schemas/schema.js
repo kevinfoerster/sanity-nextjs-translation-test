@@ -1,3 +1,5 @@
+import Schema from '@sanity/schema';
+
 // First, we must import the schema creator
 import createSchema from 'part:@sanity/base/schema-creator';
 
@@ -25,7 +27,7 @@ import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
-export default createSchema({
+const schema = {
   name: 'default',
   // Then proceed to concatenate our our document type
   // to the ones provided by any plugins that are installed
@@ -45,4 +47,10 @@ export default createSchema({
     siteConfig,
     textSection,
   ]),
-});
+}
+
+
+const parsedSchema = new Schema(schema);
+console.log(parsedSchema.get('hero'));
+export default createSchema(schema);
+
