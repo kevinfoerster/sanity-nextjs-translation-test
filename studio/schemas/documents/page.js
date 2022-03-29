@@ -4,6 +4,7 @@ const contentTypes = [
   { type: 'imageSection' },
   { type: 'mailchimp' },
   { type: 'textSection' },
+  { type: 'm0016' },
 ]
 
 export default {

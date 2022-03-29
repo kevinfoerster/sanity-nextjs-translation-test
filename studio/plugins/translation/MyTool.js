@@ -87,8 +87,6 @@ const MyTool = () => {
     const objectTypeNameList = objectTypes.map(type => type.name)
     const sanityPrimitiveTypeNameList = ['text', 'string', 'date', 'image', 'array']
 
-
-
     const appendFields = (field) => {
       if([...objectTypeNameList, ...sanityPrimitiveTypeNameList].includes(field.type)) {
 
@@ -110,7 +108,6 @@ const MyTool = () => {
         const nestedFields = findFieldTypeInObjectType(field.type, objectTypes)
         return {
           ...field,
-          // this is where the recursion will happen
           fields: nestedFields?.fields.map(nestedField => appendFields(nestedField))
         }
       }

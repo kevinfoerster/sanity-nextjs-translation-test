@@ -19,7 +19,9 @@ import internalLink from './objects/internalLink';
 import link from './objects/link';
 import portableText from './objects/portableText';
 import simplePortableText from './objects/simplePortableText';
-
+import imageWithAlt from './objects/imageWithAlt';
+import m0016, {m0016Links, m0016SocialMediaLogos} from './objects/m0016';
+import externalLink from './objects/externalLinks';
 // Landing page sections
 import hero from './objects/hero';
 import imageSection from './objects/imageSection';
@@ -46,6 +48,11 @@ const schema = {
     simplePortableText,
     siteConfig,
     textSection,
+    m0016,
+    m0016Links, 
+    m0016SocialMediaLogos,
+    imageWithAlt,
+    externalLink
   ]),
 }
 
