@@ -1,9 +1,9 @@
 import { MasterDetailIcon } from '@sanity/icons'
 const contentTypes = [
-  { type: 'hero' },
-  { type: 'imageSection' },
-  { type: 'mailchimp' },
-  { type: 'textSection' },
+  // { type: 'hero' },
+  // { type: 'imageSection' },
+  // { type: 'mailchimp' },
+  // { type: 'textSection' },
   { type: 'm0016' },
 ]
 

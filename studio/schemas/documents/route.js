@@ -10,6 +10,7 @@ export default {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
+      translatable: true
     },
     {
       name: 'page',
